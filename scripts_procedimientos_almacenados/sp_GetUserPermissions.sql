@@ -487,7 +487,7 @@ BEGIN
 				CASE WHEN A.[Inserted_by_default]  = 0 THEN A.[can_export]    ELSE B.[can_export]           END  AS [can_export]    ,
 				CASE WHEN A.[Inserted_by_default]  = 0 THEN A.[can_import]    ELSE B.[can_import]           END  AS [can_import]    ,
 				CASE WHEN A.[Inserted_by_default]  = 0 THEN A.[peusr_include] ELSE B.perrc_include          END  AS [peusr_include] ,
-				CASE WHEN A.registro_de_la_entidad = 0 THEN A.[peusr_include] ELSE B.registro_de_la_entidad END  AS [peusr_include] ,
+				CASE WHEN A.[Inserted_by_default]  = 0 THEN A.registro_de_la_entidad ELSE B.registro_de_la_entidad END  AS registro_de_la_entidad ,
 				A.[Inserted_by_default] 
 		FROM #tmpPermiUserRecord A
 		LEFT JOIN #tmpPermiRoleRecord B ON A.id_rol = B.id_role AND A.id_entit = B.id_entit AND A.registro_de_la_entidad = B.registro_de_la_entidad
