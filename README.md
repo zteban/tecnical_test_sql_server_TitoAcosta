@@ -6,7 +6,8 @@ Notas:
 2. Como prioridad esta [PermiUserRecord] sobre [PermiUser] al momento de calcular los permisos a nivel de registro
 3. Como prioridad esta [PermiRoleRecord] sobre [PermiRole] al momento de calcular los permisos a nivel de registro
 4. Al relacionar el flujo de permisos del usaurio con el del rol, se deja como prioridad los permisos directos del usuario, en caso de que los permisos del rol apunten a la misma entidad con un permiso diferente
-5. cuando no se encuentran permisos asignados, por defecto se asigna el permiso cero, el cual tiene toda su combinación de permisos en 0. Esto para todos los flujos de permisos
+5. Como prioridad estan los permisos agregados por include, que los permisos agregados por exclude en cada flujo
+6. cuando no se encuentran permisos asignados, por defecto se asigna el permiso cero, el cual tiene toda su combinación de permisos en 0. Esto para todos los flujos de permisos
 
 
 
