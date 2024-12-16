@@ -1,7 +1,8 @@
-Prueba Técnica: Sistema de Permisos
+Prueba Técnica: Sistema de Permisos 
+Tito Acosta
 
 Notas: 
-1. Agregué la columna [role_id] a la tabla [DB_Entrevistas].[dbo].[UserCompany] para identificar el rol de cada usuario y asi poder asignar los permisos del rol al usuario
+1. Agregué la columna [role_id] a la tabla [dbo].[UserCompany] para identificar el rol de cada usuario y asi poder asignar los permisos del rol al usuario
 2. Como prioridad esta [PermiUserRecord] sobre [PermiUser] al momento de calcular los permisos a nivel de registro
 3. Como prioridad esta [PermiRoleRecord] sobre [PermiRole] al momento de calcular los permisos a nivel de registro
 4. Al relacionar el flujo de permisos del usaurio con el del rol, se deja como prioridad los permisos directos del usuario, en caso de que los permisos del rol apunten a la misma entidad con un permiso diferente
